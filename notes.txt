@@ -1,0 +1,17 @@
+Methods vs Computed
+
+Methods
+- Functions that are meant to be called
+- Can have parameters passed in
+- Re-evaluated every time they're called
+- Not meant to be a property
+
+Computed Properties
+- Intended to compute existing data
+- Shouldn't have parameters passed in
+- Cached based on their dependencies 
+- Should be used as a property
+
+A good rule of thumb to follow:
+- Use methods when responding to the changes (e.g clicking a button, submitting a form, etc) or to run explicit functionality chnage within the instance (e.g have a method called from lifestyle hook).
+- Use computed properties for data manipulation (e.g create a sorted array from an unsorted array in the instance).
